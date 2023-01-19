@@ -16,7 +16,7 @@ with open(img_name, "rb") as f:
 model_inputs = {'img_bytes': encoded }
 out = banana.run(api_key, model_key, model_inputs)
 
-image_byte_string = out.json()["image_base64"]
+image_byte_string = out["modelOutputs"][0]["image_base64"]
 image_encoded = image_byte_string.encode('utf-8')
 image_bytes = BytesIO(base64.b64decode(image_encoded))
 image = Image.open(image_bytes)
