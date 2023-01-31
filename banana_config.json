@@ -1,0 +1,11 @@
+{
+    "name": "GFPGAN",
+    "category": "Computer Vision",
+    "example_input": {
+        "img_bytes": "<INPUT_IMAGE_BYTES>"
+    },
+    "example_output": {
+        "image_base64": "<UPSCALED_OUTPUT_IMAGE_BYTES>"
+    },
+    "version": "1"
+  }
